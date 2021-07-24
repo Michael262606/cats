@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html land = "ru">
+<html lang="ru">
     <head>
     <!--метатег-->
 <meta charset="utf-8">
@@ -26,7 +26,7 @@
                     <?php else: ?>
                   <?php
                      foreach($categories as $categoriy) :?>
-                   <li><a href="/category.php?id=><?$categoriy["id"]?><?=$categoriy["title"]?> </a></li>
+               <li><?php echo '<a href="/category.php?id=' . $categoriy["id"] . '">' . $categoriy["title"] . '</a>'; ?></li>
                      <?php endforeach; ?>
                    <?php endif; ?>
                      </ul>       
