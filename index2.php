@@ -38,7 +38,7 @@
         <h1 href="...">содержания каталога</h1>
         <?php $posts = get_posts($conn); ?>
         <?php foreach($posts as $post) :?>
-          <p> <img src="Images/imag 1.jpg" width="120" height="120" alt="кот"  vspace="5" hspace="5" align="left">
+          <p> <img src="<?php echo $post['Images']?>" width="120" height="120" alt="кот"  vspace="5" hspace="5" align="left">
          <h2> <?php echo $post['title'] ?></h2> 
          <p><?php echo $post['articles'] ?></p>
          <a href="...">читать полностью</a>
